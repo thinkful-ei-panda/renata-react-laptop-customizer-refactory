@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form';
-import Cart from './Cart';
+import ShoppingCart from './ShoppingCart';
 import './App.css';
 
 class App extends Component {
@@ -45,8 +45,14 @@ class App extends Component {
           <h1>ELF Computing | Laptops</h1>
         </header>
         <main>
-          <Form features={this.props.features} format={this.USCurrencyFormat.format} selected={this.state.selected} updateFeature={this.updateFeature} />
-          <Cart format={this.USCurrencyFormat.format} selected={this.state.selected} />
+          <Form 
+          features={this.props.features} 
+          format={this.USCurrencyFormat.format} 
+          selected={this.state.selected} 
+          updateFeature={this.updateFeature} />
+          <ShoppingCart 
+          format={this.USCurrencyFormat.format} 
+          selected={this.state.selected} />
         </main>
       </div>
     );

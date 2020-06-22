@@ -1,7 +1,7 @@
 import React from 'react';
 import Options from './Options';
 
-function Features(props) {
+function Characteristics(props) {
   return Object.keys(props.features).map((feature, idx) => {
     const featureHash = feature + '-' + idx;
     return (
@@ -15,4 +15,4 @@ function Features(props) {
   });
 };
 
-export default Features;
+export default Characteristics;
